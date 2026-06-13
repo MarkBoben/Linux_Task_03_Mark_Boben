@@ -1,0 +1,15 @@
+### Part D: Service Monitoring
+
+**1. What is a Service?**
+
+A service (also called a daemon) is a background process managed by the system's init/service manager (systemd) that typically starts automatically at boot or on demand, and runs without direct user interaction — for example, SSH, NetworkManager, or a web server.
+
+**2. Why are services important?**
+
+Services provide essential ongoing functionality such as networking, remote access, logging, and security monitoring. They allow the system to perform tasks automatically and continuously without requiring a user to manually start programs each time.
+
+**3. How can a stopped service affect a system?**
+
+If a critical service is stopped, the functionality it provides becomes unavailable. For example, the `ssh.service` being inactive means no one can connect to this machine remotely via SSH. If `NetworkManager` were stopped, the system could lose network connectivity entirely, affecting internet access, DNS resolution, and other dependent services.
+
+---

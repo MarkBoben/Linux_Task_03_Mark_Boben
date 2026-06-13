@@ -1,0 +1,11 @@
+### System Summary Report
+
+The system (hostname: **kali**) has a total of **3.8 GiB** of RAM, with about **2.6 GiB** available and only **1.2 GiB** in use, indicating low memory pressure. The root filesystem (`/dev/sda1`, 38G) is **52% used**, with **17G free**. The system has been up for **8 hours and 43 minutes** with a single user logged in and a very low load average (0.11, 0.05, 0.01), showing the system is lightly loaded. It is running kernel version **6.18.12+kali-amd64** on a 64-bit (x86_64) architecture.
+
+| Metric         | Value |
+|----------------|-------|
+| Total RAM      | 3.8 GiB |
+| Available RAM  | 2.6 GiB |
+| Disk Usage     | 19G used / 38G total (52%), 17G available on `/dev/sda1` |
+| System Uptime  | 8 hours 43 minutes |
+| Kernel Version | Linux kali 6.18.12+kali-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.18.12-1kali1 (2026-02-25) x86_64 GNU/Linux |

@@ -1,0 +1,13 @@
+### Part G: Mini SOC Activity
+
+**1. How would you identify resource-heavy processes?**
+
+I would use `top` or `htop` to get a live view of CPU and memory usage sorted by resource consumption, and `ps aux --sort=-%cpu` or `ps aux --sort=-%mem` to list processes consuming the most CPU or memory. This quickly highlights which process(es) are responsible for the slowdown.
+
+**2. How would you determine whether a process is suspicious?**
+
+I would check the process name and command path (is it running from an unusual location like `/tmp`?), the user that owns it (is a normal user running something with root privileges unexpectedly?), its PID/PPID relationship (does it have a strange parent process?), and whether it is consuming abnormal amounts of CPU, memory, or network resources. I would also check `netstat`/`ss` to see if the process has unexpected open network connections, and search the process name online if it's unfamiliar.
+
+**3. What information would you collect before terminating a process?**
+
+Before killing a process, I would record its PID, PPID, the full command/path it was launched from, the user running it, its CPU/memory usage, any open files or network connections (via `lsof` or `ss`), and how long it has been running. This information helps with incident documentation, root-cause analysis, and determining whether the issue (or threat) might recur after the process is terminated. 

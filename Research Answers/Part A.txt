@@ -1,0 +1,19 @@
+### Part A: Process Monitoring
+
+**1. What is a Process?**
+
+A process is a running instance of a program. When a program is executed, the operating system loads it into memory and allocates it resources (CPU time, memory, files) so it can run. Each process operates independently and has its own memory space.
+
+**2. What is a PID?**
+
+A PID (Process ID) is a unique number assigned by the Linux kernel to every running process. It is used to identify, monitor, and manage processes (for example, when sending signals like `kill`).
+
+**3. Which process is consuming the most CPU?**
+
+Based on the `top`/`htop` output, **xfwm4** (PID 1244) was using the highest CPU at around 1.4%, followed by **Xorg** (PID 786) at around 0.7%. Overall CPU usage on the system was very low (mostly idle).
+
+**4. Which process is consuming the most Memory?**
+
+**Xorg** (PID 786) was consuming the most memory at around 3.6% (RES ~142 MB), followed by **xfwm4** (PID 1244) at around 3.5%.
+
+---
