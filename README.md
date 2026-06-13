@@ -30,9 +30,15 @@ These are essential skills for Linux Administrators, SOC Analysts, and Cyber Sec
 > If htop is not installed: `sudo apt install htop`
 
 ### Screenshots
-- `Screenshots/Part-A_process_monitoring_1.png` (ps, ps aux)
-- `Screenshots/Part-A_process_monitoring_2.png` (top)
-- `Screenshots/Part-A_process_monitoring_3.png` (htop)
+![ps, ps aux](Screenshots/Part-A_process_monitoring_1.png)
+
+*ps, ps aux*
+![top](Screenshots/Part-A_process_monitoring_2.png)
+
+*top*
+![htop](Screenshots/Part-A_process_monitoring_3.png)
+
+*htop*
 
 ### Questions & Answers
 
@@ -71,7 +77,7 @@ These are essential skills for Linux Administrators, SOC Analysts, and Cyber Sec
 | Result         | The first `sleep 300` was stopped with a normal `kill`, and the terminal reported `zsh: terminated  sleep 300`. After running `sleep 300` again and using `kill -9` on its PID, the terminal reported `zsh: killed  sleep 300`. The `kill -9` (SIGKILL) immediately and forcefully ended the process without allowing it any cleanup, whereas the plain `kill` (SIGTERM) allowed a normal termination. |
 
 ### Screenshots
-- `Screenshots/Part-B_Process_management.png`
+![Process management](Screenshots/Part-B_Process_management.png)
 
 ---
 
@@ -94,7 +100,7 @@ These are essential skills for Linux Administrators, SOC Analysts, and Cyber Sec
 | Kernel Version    | Linux kali 6.18.12+kali-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.18.12-1kali1 (2026-02-25) x86_64 GNU/Linux |
 
 ### Screenshots
-- `Screenshots/Part-C_System_monitoring.png`
+![System monitoring](Screenshots/Part-C_System_monitoring.png)
 
 ### System Summary Report
 
@@ -127,7 +133,7 @@ These are essential skills for Linux Administrators, SOC Analysts, and Cyber Sec
 > If a critical service is stopped, the functionality it provides becomes unavailable. For example, the `ssh.service` being inactive means no one can connect to this machine remotely via SSH. If `NetworkManager` were stopped, the system could lose network connectivity entirely, affecting internet access, DNS resolution, and other dependent services.
 
 ### Screenshots
-- `Screenshots/Part-D_Service_monitoring.png`
+![Service monitoring](Screenshots/Part-D_Service_monitoring.png)
 
 ---
 
@@ -152,8 +158,12 @@ chmod +x system_report.sh
 ```
 
 ### Screenshots
-- `Screenshots/Part-E_Shell_scripting_1.png` (script execution & output)
-- `Screenshots/Part-E_Shell_scripting_2.png` (script source code in nano)
+![script execution & output](Screenshots/Part-E_Shell_scripting_1.png)
+
+*script execution & output*
+![script source code in nano](Screenshots/Part-E_Shell_scripting_2.png)
+
+*script source code in nano*
 
 ---
 
@@ -202,7 +212,9 @@ chmod +x system_report.sh
 | Security Use Case | Helps an analyst review login history to identify unusual login times, repeated failed logins, or logins from unexpected sources — useful for detecting unauthorized access attempts. |
 
 ### Screenshots
-- `Screenshots/Part-_F_Security_monitoring_challenge.png` (covers `netstat -tuln`, `who`, `w`, and `last` output)
+![Security monitoring challenge: netstat, who, w, last](Screenshots/Part-_F_Security_monitoring_challenge.png)
+
+*covers `netstat -tuln`, `who`, `w`, and `last` output*
 
 ---
 
